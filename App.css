@@ -1,0 +1,158 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+/* Navbar */
+.navbar {
+  height: 112px;
+  padding: 0 12.5%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 75px;
+  font-weight: bold;
+  font-style: italic;
+  color: #003087;
+}
+
+.logo-p {
+  text-shadow: 7px 7px 0 #009cde;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.nav-links span {
+  margin-left: 5px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 22px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-size: 23px;
+  font-weight: 600;
+  padding: 20px 30px;
+  border-radius: 50px;
+}
+
+.login,
+.contact {
+  background: #eff0f7;
+  color: black;
+}
+
+.signup {
+  background: black;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding-top: 75px;
+}
+
+.toggle {
+  display: inline-flex;
+  padding: 6px;
+  background: #eff0f7;
+  border-radius: 60px;
+  margin-bottom: 75px;
+}
+
+.toggle button {
+  background: transparent;
+  color: #555;
+  padding: 25px 40px;
+}
+
+.toggle .active {
+  background: white;
+  color: black;
+}
+
+.hero h1 {
+  font-size: 120px;
+  font-weight: 900;
+  letter-spacing: -7px;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.hero p {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.hero-buttons button {
+  padding: 20px 30px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 15px 5%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .hero h1 {
+    font-size: 65px;
+  }
+
+  .hero h2 {
+    font-size: 25px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+}
